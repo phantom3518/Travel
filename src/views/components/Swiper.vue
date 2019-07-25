@@ -17,8 +17,10 @@ export default {
     return {
       swiperOption: {
         pagination: '.swiper-pagination',
-        loop: true
-      //  下面的切换圆圈
+        //  下面的切换圆圈
+        loop: true,
+        autoplay: 3000,
+        autoplayDisableOnInteraction: false
       },
       swiperList: [{
         id: '0001',
