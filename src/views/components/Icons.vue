@@ -15,49 +15,15 @@
 <script>
 export default {
   name: 'HomeIcons',
+  props: {
+    iconList: Array
+  },
   data () {
     return {
       swiperOption: {
         loop: false,
         autoplay: false
-      },
-      iconList: [{
-        id: '0001',
-        imgUrl: '//s.qunarzz.com/homenode/images/touchheader/hotel.png',
-        desc: '热门景点1'
-      }, {
-        id: '0002',
-        imgUrl: '//s.qunarzz.com/homenode/images/touchheader/hotel.png',
-        desc: '热门景点2'
-      }, {
-        id: '0003',
-        imgUrl: '//s.qunarzz.com/homenode/images/touchheader/hotel.png',
-        desc: '热门景点3'
-      }, {
-        id: '0004',
-        imgUrl: '//s.qunarzz.com/homenode/images/touchheader/hotel.png',
-        desc: '热门景点4'
-      }, {
-        id: '0005',
-        imgUrl: '//s.qunarzz.com/homenode/images/touchheader/hotel.png',
-        desc: '热门景点5'
-      }, {
-        id: '0006',
-        imgUrl: '//s.qunarzz.com/homenode/images/touchheader/hotel.png',
-        desc: '热门景点6'
-      }, {
-        id: '0007',
-        imgUrl: '//s.qunarzz.com/homenode/images/touchheader/hotel.png',
-        desc: '热门景点7'
-      }, {
-        id: '0008',
-        imgUrl: '//s.qunarzz.com/homenode/images/touchheader/hotel.png',
-        desc: '热门景点8'
-      }, {
-        id: '0009',
-        imgUrl: '//s.qunarzz.com/homenode/images/touchheader/hotel.png',
-        desc: '热门景点9'
-      }]
+      }
     }
   },
   computed: {

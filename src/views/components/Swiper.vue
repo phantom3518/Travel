@@ -13,6 +13,9 @@
 <script>
 export default {
   name: 'HomeSwiper',
+  props: {
+    swiperList: Array
+  },
   data () {
     return {
       swiperOption: {
@@ -21,14 +24,7 @@ export default {
         loop: true,
         autoplay: 3000,
         autoplayDisableOnInteraction: false
-      },
-      swiperList: [{
-        id: '0001',
-        imgUrl: 'https://ss0.bdstatic.com/-0U0bnSm1A5BphGlnYG/tam-ogel/19838a56209d42a75fb8b4f16b1d784e_255_144.jpg'
-      }, {
-        id: '0002',
-        imgUrl: 'https://ss0.bdstatic.com/-0U0bnSm1A5BphGlnYG/tam-ogel/c0fe6d397c00f43117e5962881b6f178_255_144.jpg'
-      }]
+      }
     }
   }
 }
@@ -46,5 +42,5 @@ export default {
     .swiper-slide
       img
         width: 100%
-        height: 2.34rem
+        height:auto
 </style>

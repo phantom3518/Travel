@@ -17,25 +17,12 @@
 <script>
 export default {
   name: 'HomeRecommend',
+  props: {
+    recommendList: Array
+  },
   data () {
     return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'https://ss0.bdstatic.com/-0U0bnSm1A5BphGlnYG/tam-ogel/47d4d7de333622ac5a8f9ddd2c8ed3fd_78_59.jpg',
-        title: '大连圣海洋世界',
-        desc: '浪漫大连首站'
-      }, {
-        id: '0002',
-        imgUrl: 'https://ss0.bdstatic.com/-0U0bnSm1A5BphGlnYG/tam-ogel/47d4d7de333622ac5a8f9ddd2c8ed3fd_78_59.jpg',
-        title: '大连圣海洋世界',
-        desc: '浪漫大连首站'
-      }, {
-        id: '0003',
-        imgUrl: 'https://ss0.bdstatic.com/-0U0bnSm1A5BphGlnYG/tam-ogel/47d4d7de333622ac5a8f9ddd2c8ed3fd_78_59.jpg',
-        title: '大连圣海洋世界',
-        desc: '浪漫大连首站'
-      }
-      ]
+
     }
   }
 }
