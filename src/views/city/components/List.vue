@@ -51,8 +51,6 @@ export default {
     handleCityClick (city) {
       this.$store.commit('changeCity', city)
       this.$router.push('/')
-      // this.$store.dispatch('changeCity', city)
-      // alert(city)
     }
   },
   watch: {
@@ -66,7 +64,10 @@ export default {
     }
   },
   mounted () {
-    this.scroll = new Bscroll(this.$refs.wrapper)
+    this.$nextTick(() => {
+      this.scroll = new Bscroll(this.$refs.wrapper, {})
+    })
+    // this.scroll = new Bscroll(this.$refs.wrapper)
   }
 }
 </script>

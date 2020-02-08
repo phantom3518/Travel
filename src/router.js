@@ -15,6 +15,7 @@ export default new Router({
     path: '/city',
     name: 'City',
     component: () => import('@/views/city/City.vue')
+    // component: () => import('@/views/city/city-test.vue')
 
   },
   {
